@@ -7,7 +7,7 @@ export class AccessControlLog {
 
 
   addAccessItem(person: String, message: String) {
-let createdAt= new Date()
+    let createdAt= new Date()
     this.logMessages.push({person, message, createdAt});
     this.logMessages.forEach (function(e){
       console.log(e)
